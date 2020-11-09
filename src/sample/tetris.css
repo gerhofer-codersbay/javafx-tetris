@@ -1,0 +1,9 @@
+.tetromino {
+    -fx-fill: lightgray;
+    -fx-stroke: darkgray;
+    -fx-stroke-width: 1;
+}
+
+.current {
+    -fx-fill: hotpink;
+}
