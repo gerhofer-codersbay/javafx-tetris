@@ -25,4 +25,8 @@ public class Cell {
     public void moveDown() {
         this.row++;
     }
+
+    public void moveLeft() { this.column--; }
+
+    public void moveRight() { this.column++;}
 }

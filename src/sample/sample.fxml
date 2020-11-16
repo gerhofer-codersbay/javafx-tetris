@@ -9,11 +9,7 @@
 <?import javafx.scene.layout.TilePane?>
 <?import javafx.scene.text.Font?>
 
-
-<GridPane alignment="center" hgap="10" vgap="10"
-          xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1"
-          fx:controller="sample.Controller"
-          stylesheets="@tetris.css">
+<GridPane alignment="center" hgap="10" stylesheets="@tetris.css" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <columnConstraints>
       <ColumnConstraints />
    </columnConstraints>
@@ -21,11 +17,11 @@
       <RowConstraints />
    </rowConstraints>
    <children>
-      <AnchorPane prefHeight="437.0" prefWidth="507.0">
+      <AnchorPane onKeyPressed="#handleKeypress" prefHeight="437.0" prefWidth="507.0">
          <children>
             <TilePane fx:id="tetrisBoard" layoutX="162.0" layoutY="19.0" maxHeight="400.0" maxWidth="210.0" minHeight="400.0" minWidth="210.0" prefHeight="400.0" prefWidth="210.0" />
-            <Button fx:id="start" onAction="#start" layoutX="50.0" layoutY="99.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="103.0" text="START" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="354.0" />
-            <Button fx:id="stopButton" layoutX="50.0" layoutY="156.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="103.0" text="STOP" />
+            <Button fx:id="start" layoutX="50.0" layoutY="99.0" mnemonicParsing="false" onAction="#start" prefHeight="41.0" prefWidth="103.0" text="START" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="354.0" />
+            <Button onAction="#stop" fx:id="stopButton" layoutX="50.0" layoutY="156.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="103.0" text="STOP" />
             <Label alignment="CENTER" layoutX="50.0" layoutY="40.0" prefHeight="41.0" prefWidth="103.0" text="TETRIS" textAlignment="CENTER">
                <font>
                   <Font size="24.0" />

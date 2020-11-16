@@ -7,3 +7,7 @@
 .current {
     -fx-fill: hotpink;
 }
+
+.stuck {
+    -fx-fill: purple;
+}
